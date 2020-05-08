@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_formFragment"
+            app:destination="@id/formFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginTakePhotoFragment"
+            app:destination="@id/loginTakePhotoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.form.FormFragment"
+        android:label="FormFragment"
+        tools:layout="@layout/fragment_form">
+        <action
+            android:id="@+id/action_formFragment_to_registerTakePhotoFragment"
+            app:destination="@id/registerTakePhotoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSuccessFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.result.LoginSuccessFragment"
+        android:label="LoginSuccessFragment"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/loginErrorFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.result.LoginErrorFragment"
+        android:label="LoginErrorFragment"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/registerSuccessFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.result.RegisterSuccessFragment"
+        android:label="RegisterSuccessFragment"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/registerErrorFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.result.RegisterErrorFragment"
+        android:label="RegisterErrorFragment"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/loginTakePhotoFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.take_photo.LoginTakePhotoFragment"
+        android:label="LoginTakePhotoFragment"
+        tools:layout="@layout/fragment_take_photo">
+        <action
+            android:id="@+id/action_loginTakePhotoFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerTakePhotoFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.take_photo.RegisterTakePhotoFragment"
+        android:label="RegisterTakePhotoFragment"
+        tools:layout="@layout/fragment_take_photo">
+        <action
+            android:id="@+id/action_registerTakePhotoFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.send_request.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_send_request">
+        <action
+            android:id="@+id/action_loginFragment_to_loginSuccessFragment"
+            app:destination="@id/loginSuccessFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginErrorFragment"
+            app:destination="@id/loginErrorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="kz.anuaryespenbet.baqylafacerecognition.view.send_request.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_send_request">
+        <action
+            android:id="@+id/action_registerFragment_to_registerSuccessFragment"
+            app:destination="@id/registerSuccessFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_registerErrorFragment"
+            app:destination="@id/registerErrorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+</navigation>

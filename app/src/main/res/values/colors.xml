@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--    main colors-->
+    <color name="grey">#E9ECEA</color>
+    <color name="green">#00B869</color>
+    <color name="green_disabled">#B347B198</color>
+    <color name="dark_blue">#0A1B74</color>
+    <color name="breath">#A4CBCA</color>
+    <color name="white_blue">#3A509D</color>
+    <color name="dark_grey">#2B3B3A</color>
+    <color name="light_green">#00DEB1</color>
+    <color name="second_blue">#3A5CB0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#242423</color>
+    <color name="background_grey">#EEEEEE</color>
+    <color name="light_grey">#CBCBCB</color>
+
+</resources>

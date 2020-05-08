@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BaqylaFaceRecognition</string>
+    <string name="brand_name">Baqyla</string>
+    <string name="register">Регистрация</string>
+    <string name="login">Вход</string>
+    <string name="open_camera">Открыть камеру</string>
+    <string name="welcome">Добро пожаловать в Baqyla!</string>
+    <string name="enter_details">Введите данные ребенка</string>
+    <string name="name_description">Имя ребенка</string>
+    <string name="name_hint">Имя</string>
+    <string name="surname_description">Фамилия ребенка</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="birthday_description">День рождение</string>
+    <string name="next">Далее</string>
+    <string name="take_photo_registration_title">Вашему ребенку необходимо сделать снимок</string>
+    <string name="take_photo_login_title">Вам необходимо сделать снимок</string>
+    <string name="take_photo_registration_description">Каждый раз когда ваш ребенок придет в школу, пройдет биометрическую идентификацию</string>
+    <string name="take_photo_login_description">Каждый раз когда вы придете в школу, вы пройдете биометрическую идентификацию</string>
+    <string name="take_photo">Сделать снимок</string>
+    <string name="send_request_title">Снимок успешно сделан!</string>
+    <string name="send_request_registration">Зарегистрироваться</string>
+    <string name="send_request_login">Войти</string>
+    <string name="hello_user">Привет, Ануар</string>
+    <string name="result_register_success">Регистрация прошла успешно!</string>
+    <string name="result_login_success">Биометрическая идентификация прошла успешно!</string>
+    <string name="result_error">Что-то пошло не так :(</string>
+    <string name="result_error_not_found">Вас нет в нашей базе, пройдите регистрацию</string>
+    <string name="navigate_to_home">Вернуться на главную</string>
+    <string name="try_again">Повторите попытку</string>
+</resources>
