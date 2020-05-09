@@ -27,4 +27,5 @@
     <string name="result_error_not_found">Вас нет в нашей базе, пройдите регистрацию</string>
     <string name="navigate_to_home">Вернуться на главную</string>
     <string name="try_again">Повторите попытку</string>
+    <string name="camera_permission">Вы не дали согласие на использование камеры!</string>
 </resources>
