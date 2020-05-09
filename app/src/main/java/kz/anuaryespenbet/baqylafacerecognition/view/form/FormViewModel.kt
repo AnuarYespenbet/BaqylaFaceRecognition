@@ -2,14 +2,12 @@ package kz.anuaryespenbet.baqylafacerecognition.view.form
 
 import androidx.lifecycle.ViewModel
 import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStore
-import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreStringType
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreObjectType
+import kz.anuaryespenbet.baqylafacerecognition.data.model.User
 
 class FormViewModel : ViewModel() {
 
-    fun setDetails(name: String, surname: String) {
-        LocalStore()
-            .save(string = name, type = LocalStoreStringType.NAME)
-        LocalStore()
-            .save(string = surname, type = LocalStoreStringType.SURNAME)
+    fun saveUser(user: User) {
+        LocalStore().save(user, LocalStoreObjectType.CURRENT_USER)
     }
 }

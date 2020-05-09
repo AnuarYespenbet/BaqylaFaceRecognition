@@ -28,4 +28,12 @@
     <string name="navigate_to_home">Вернуться на главную</string>
     <string name="try_again">Повторите попытку</string>
     <string name="camera_permission">Вы не дали согласие на использование камеры!</string>
+    <string name="address">Адрес</string>
+    <string name="phone_number">Номер телеофона</string>
+
+    <string-array name="spinner_item">
+        <item>anuar</item>
+        <item>bekaidar</item>
+        <item>damir</item>
+    </string-array>
 </resources>

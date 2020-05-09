@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStore
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreObjectType
 import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreStringType
 import kz.anuaryespenbet.baqylafacerecognition.data.model.User
 import kz.anuaryespenbet.baqylafacerecognition.data.remote.NetworkService
@@ -20,13 +21,11 @@ class SendRequestViewModel : BaseViewModel() {
         .get(LocalStoreStringType.PHOTO)
 
     fun saveError(error: String) {
-        LocalStore()
-            .save(error, LocalStoreStringType.ERROR)
+        LocalStore().save(error, LocalStoreStringType.ERROR)
     }
 
     fun saveName(username: String) {
-        LocalStore()
-            .save(username, LocalStoreStringType.USERNAME)
+        LocalStore().save(username, LocalStoreStringType.NAME)
     }
 
     fun login(): MutableLiveData<Event<User>> {
@@ -47,13 +46,15 @@ class SendRequestViewModel : BaseViewModel() {
     }
 
     fun register(): MutableLiveData<Event<ResponseBody>> {
-        val name = LocalStore()
-            .get(LocalStoreStringType.NAME)
-        val surname = LocalStore()
-            .get(LocalStoreStringType.SURNAME)
+        val user = LocalStore().get(LocalStoreObjectType.CURRENT_USER, User::class.java)
         val data = HashMap<String, Any>()
-        val username = "$name $surname"
-        data["name"] = username
+
+        data["name"] = user.name as String
+        data["surname"] = user.surname as String
+        data["birthday"] = user.birthday as String
+        data["address"] = user.address as String
+        data["telephone"] = user.phone as String
+
         photo?.let { data["photo"] = photo }
 
         val liveData = MutableLiveData<Event<ResponseBody>>()

@@ -5,7 +5,7 @@ import android.view.View
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_send_request.*
-import kz.anuaryespenbet.baqylafacerecognition.*
+import kz.anuaryespenbet.baqylafacerecognition.R
 import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStore
 import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreStringType
 import kz.anuaryespenbet.baqylafacerecognition.utils.Status
@@ -24,12 +24,6 @@ class RegisterFragment : SendRequestFragment() {
                         progress_bar.visible()
                     }
                     Status.SUCCESS -> {
-                        sendRequestViewModel.saveName(
-                            "${LocalStore()
-                                .get(LocalStoreStringType.NAME)} " +
-                                    "${LocalStore()
-                                        .get(LocalStoreStringType.SURNAME)}"
-                        )
                         findNavController().navigate(R.id.action_registerFragment_to_registerSuccessFragment)
                     }
                     Status.ERROR -> {

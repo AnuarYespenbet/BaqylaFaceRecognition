@@ -54,19 +54,15 @@ class LocalStore {
 
     fun removeAllValues() {
         removeString(LocalStoreStringType.NAME)
-        removeString(LocalStoreStringType.SURNAME)
-        removeString(LocalStoreStringType.PHOTO)
         removeString(LocalStoreStringType.ERROR)
-        //removeObject(LocalStoreObjectType.CURRENT_USER)
+        removeObject(LocalStoreObjectType.CURRENT_USER)
     }
 }
 
 enum class LocalStoreStringType {
     NAME,
-    SURNAME,
     PHOTO,
-    ERROR,
-    USERNAME
+    ERROR
 }
 
 enum class LocalStoreObjectType {
