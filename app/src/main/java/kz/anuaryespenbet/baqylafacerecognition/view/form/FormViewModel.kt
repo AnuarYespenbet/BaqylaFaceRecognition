@@ -1,8 +1,8 @@
 package kz.anuaryespenbet.baqylafacerecognition.view.form
 
 import androidx.lifecycle.ViewModel
-import kz.anuaryespenbet.baqylafacerecognition.model.local.LocalStore
-import kz.anuaryespenbet.baqylafacerecognition.model.local.LocalStoreStringType
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStore
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreStringType
 
 class FormViewModel : ViewModel() {
 

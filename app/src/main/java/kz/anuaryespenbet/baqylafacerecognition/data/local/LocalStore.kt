@@ -1,4 +1,4 @@
-package kz.anuaryespenbet.baqylafacerecognition.model.local
+package kz.anuaryespenbet.baqylafacerecognition.data.local
 
 import android.content.Context
 import android.content.SharedPreferences

@@ -6,11 +6,11 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_send_request.*
 import kz.anuaryespenbet.baqylafacerecognition.*
-import kz.anuaryespenbet.baqylafacerecognition.model.local.LocalStore
-import kz.anuaryespenbet.baqylafacerecognition.model.local.LocalStoreStringType
-import kz.anuaryespenbet.baqylafacerecognition.view.utils.Status
-import kz.anuaryespenbet.baqylafacerecognition.view.utils.invisible
-import kz.anuaryespenbet.baqylafacerecognition.view.utils.visible
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStore
+import kz.anuaryespenbet.baqylafacerecognition.data.local.LocalStoreStringType
+import kz.anuaryespenbet.baqylafacerecognition.utils.Status
+import kz.anuaryespenbet.baqylafacerecognition.utils.invisible
+import kz.anuaryespenbet.baqylafacerecognition.utils.visible
 
 class RegisterFragment : SendRequestFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

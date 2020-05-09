@@ -1,7 +1,8 @@
-package kz.anuaryespenbet.baqylafacerecognition.model
+package kz.anuaryespenbet.baqylafacerecognition.data.repository
 
 import io.reactivex.Observable
-import kz.anuaryespenbet.baqylafacerecognition.model.remote.AmazonWebService
+import kz.anuaryespenbet.baqylafacerecognition.data.model.User
+import kz.anuaryespenbet.baqylafacerecognition.data.remote.AmazonWebService
 import okhttp3.ResponseBody
 
 class UserRepository(private val webService: AmazonWebService) {

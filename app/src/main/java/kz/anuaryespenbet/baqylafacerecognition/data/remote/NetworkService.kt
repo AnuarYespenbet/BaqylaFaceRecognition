@@ -1,4 +1,4 @@
-package kz.anuaryespenbet.baqylafacerecognition.model.remote
+package kz.anuaryespenbet.baqylafacerecognition.data.remote
 
 val client = NetworkClient()
 

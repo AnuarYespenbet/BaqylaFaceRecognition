@@ -1,4 +1,4 @@
-package kz.anuaryespenbet.baqylafacerecognition.view.utils
+package kz.anuaryespenbet.baqylafacerecognition.utils
 
 import android.content.Context
 import android.view.View

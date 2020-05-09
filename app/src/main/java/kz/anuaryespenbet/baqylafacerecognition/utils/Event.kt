@@ -1,4 +1,4 @@
-package kz.anuaryespenbet.baqylafacerecognition.view.utils
+package kz.anuaryespenbet.baqylafacerecognition.utils
 
 data class Event<out T>(val status: Status, val data: T?, val error: Throwable?) {
     companion object {

@@ -1,4 +1,4 @@
-package kz.anuaryespenbet.baqylafacerecognition.model
+package kz.anuaryespenbet.baqylafacerecognition.data.model
 
 import com.google.gson.annotations.SerializedName
 

@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_take_photo.*
 import kz.anuaryespenbet.baqylafacerecognition.R
-import kz.anuaryespenbet.baqylafacerecognition.view.utils.toast
+import kz.anuaryespenbet.baqylafacerecognition.utils.toast
 import java.io.ByteArrayOutputStream
 
 open class TakePhotoFragment : Fragment() {

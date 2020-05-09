@@ -1,7 +1,7 @@
-package kz.anuaryespenbet.baqylafacerecognition.model.remote
+package kz.anuaryespenbet.baqylafacerecognition.data.remote
 
 import io.reactivex.Observable
-import kz.anuaryespenbet.baqylafacerecognition.model.User
+import kz.anuaryespenbet.baqylafacerecognition.data.model.User
 import okhttp3.ResponseBody
 import retrofit2.http.Body
 import retrofit2.http.POST
